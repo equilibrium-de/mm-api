@@ -146,7 +146,6 @@ export const createLimitOrder = ({
 	const createOrderAmount = AMOUNT_PRECISION.times(amount).toString();
 
 	const pair = keyring?.getPair(address);
-	console.log("limit price:::", createOrderlimitPrice);
 
 	if (!pair) return Promise.reject("Address not found in keyring");
 
